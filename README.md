@@ -28,9 +28,9 @@ MIMIC-IV-Note discharge-summary chunks.
 [MIMIC-IV-Note]                               │                                           ▼
 discharge.csv.gz ─► preprocess.py ─► train_paragraphs.json ─► stage_1/clean_abbr.py ─► train_entities_abbr.json
                                               │                                           ▼
-                                              │                       stage_1/add_syn.py ─► train_entities_abbr_syn.json ─► train/stage_1.sh ─► stage-1 ckpt
-                                              │                                                                                                        │
-                                              └─► stage_2/generate_all.py ──────────────► train_entities.json ────────────► train/stage_2.sh ◄────────┘
+                                              │   stage_1/add_syn.py ─► train_entities_abbr_syn.json ─► train/stage_1.sh ─► stage-1 ckpt
+                                              │                                                                                  │
+                                              └─► stage_2/generate_all.py ───► train_entities.json ────► train/stage_2.sh ◄──────┘
 ```
 
 Every `train_entities*.json` above is already in the training format
