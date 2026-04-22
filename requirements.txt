@@ -1,0 +1,14 @@
+torch>=2.1
+transformers>=4.40
+peft>=0.11
+deepspeed>=0.14
+datasets>=2.18
+accelerate>=0.30
+scikit-learn
+numpy
+pandas
+tqdm
+joblib
+openai>=1.0
+langchain-text-splitters
+sentencepiece
